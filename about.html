@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer · About me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="darkModeToggle" class="hidden" />
+    <div class="theme-wrapper">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <header
+          class="flex items-center justify-between flex-wrap gap-4 pb-6 border-b border-[var(--color-border)]"
+        >
+          <div class="flex items-center gap-2">
+            <span
+              class="text-2xl font-bold tracking-tight"
+              style="color: var(--color-brand-1)"
+              >Explorer</span
+            >
+            <span
+              class="text-sm font-mono bg-[var(--color-brand-1)]/10 px-2 py-0.5 rounded-full text-[var(--color-brand-1)]"
+              >v4</span
+            >
+          </div>
+          <div class="flex items-center gap-6">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+              <a
+                href="index.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="hover:text-[var(--color-brand-1)] transition font-bold text-[var(--color-brand-1)]"
+                >About me</a
+              >
+              <a
+                href="projects.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Projects</a
+              >
+              <a
+                href="contact.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Contact</a
+              >
+              <a
+                href="future.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Future</a
+              >
+            </nav>
+            <label
+              for="darkModeToggle"
+              class="p-2 rounded-full hover:bg-[var(--color-border)] transition text-[var(--color-text-muted)] cursor-pointer"
+              aria-label="Toggle dark mode"
+            >
+              <span class="dark-icon">🌙</span>
+              <span class="light-icon hidden">☀️</span>
+            </label>
+            <label
+              for="hamburgerToggle"
+              class="md:hidden flex flex-col items-center justify-center w-10 h-10 rounded hover:bg-[var(--color-border)] transition cursor-pointer"
+              aria-label="Menu"
+            >
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </label>
+          </div>
+        </header>
+        <input type="checkbox" id="hamburgerToggle" class="hidden" />
+        <div
+          id="mobileNav"
+          class="md:hidden mt-4 hidden-mobile flex-col gap-3 pb-4 border-b border-[var(--color-border)]"
+        >
+          <a
+            href="index.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition font-bold text-[var(--color-brand-1)]"
+            >About me</a
+          >
+          <a
+            href="projects.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Projects</a
+          >
+          <a
+            href="contact.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Contact</a
+          >
+          <a
+            href="future.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Future</a
+          >
+        </div>
+        <section class="my-10 md:my-16">
+          <h1 class="hero-heading text-[var(--color-text)]">
+            About <span style="color: var(--color-brand-1)">Me</span>
+          </h1>
+          <p class="hero-body mt-4">
+            I'm Rahmet Hussen, a passionate developer who loves building
+            adaptive, accessible web experiences. currently i am learning on
+            shiera to develop my skills on web development. This portfolio
+            demonstrates Tailwind v4, dark mode, and container queries.
+          </p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          <div>
+            <img
+              src="my image.jpg"
+              alt="Rahmet Hussen"
+              class="w-full rounded-2xl card-surface"
+            />
+          </div>
+          <div class="card-surface rounded-2xl p-6">
+            <h2 class="text-xl font-bold mb-3">📖 My Journey</h2>
+            <p class="text-[var(--color-text-muted)]">
+              Building websites since 2025. Focus on clean code, responsive
+              design, and user experience. This project uses Tailwind v4 custom
+              theming. and i started with html and css, fascinated by the
+              ability to create something visible from code.and then i have
+              explored responsive design and modern frameworks like tailwind.
+              what excites me most is creating interfaces that work beautifully
+              for everyone regardlss of their devices,screen size, or
+              preferences, i believe in clean code, thoughtful design, and the
+              power of small details. i love the creative challenge of turning a
+              blank page into a functional, beautiful website. my approach
+              combines technical skills with human empathy, i build for
+              people,not just for browsers. beyond coding, i am a novelist at
+              heart, a forest wonderer, and a cat lover, these influences shape
+              my creative process and remind me that the best design come from a
+              place of curiosity and care.
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 card-surface rounded-2xl p-6">
+          <h2 class="text-xl font-bold mb-4">🎯 My Hobbies</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+              class="flex items-center gap-3 p-3 bg-[var(--color-brand-1)]/5 rounded-xl"
+            >
+              <span class="text-3xl">🎮</span>
+              <span class="text-[var(--color-text-muted)]">Playing games</span>
+            </div>
+            <div
+              class="flex items-center gap-3 p-3 bg-[var(--color-brand-2)]/5 rounded-xl"
+            >
+              <span class="text-3xl">📝</span>
+              <span class="text-[var(--color-text-muted)]">Writing novels</span>
+            </div>
+            <div
+              class="flex items-center gap-3 p-3 bg-[var(--color-brand-3)]/5 rounded-xl"
+            >
+              <span class="text-3xl">🌲</span>
+              <span class="text-[var(--color-text-muted)]"
+                >Forest exploration</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-3 p-3 bg-[var(--color-brand-1)]/5 rounded-xl"
+            >
+              <span class="text-3xl">🐱</span>
+              <span class="text-[var(--color-text-muted)]"
+                >Living with cats</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-3 p-3 bg-[var(--color-brand-2)]/5 rounded-xl"
+            >
+              <span class="text-3xl">☕</span>
+              <span class="text-[var(--color-text-muted)]"
+                >Drinking coffee</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-3 p-3 bg-[var(--color-brand-3)]/5 rounded-xl"
+            >
+              <span class="text-3xl">🚶</span>
+              <span class="text-[var(--color-text-muted)]">Nature walks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 card-surface rounded-2xl p-6">
+          <h2 class="text-xl font-bold mb-3">🛠️ My Stack</h2>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 bg-[var(--color-brand-1)]/10 text-[var(--color-brand-1)] rounded-full"
+              >HTML5</span
+            >
+            <span
+              class="px-3 py-1 bg-[var(--color-brand-2)]/10 text-[var(--color-brand-2)] rounded-full"
+              >Tailwind v4</span
+            >
+            <span
+              class="px-3 py-1 bg-[var(--color-brand-3)]/10 text-[var(--color-brand-3)] rounded-full"
+              >Vanilla CSS</span
+            >
+            <span
+              class="px-3 py-1 bg-[var(--color-brand-1)]/10 text-[var(--color-brand-1)] rounded-full"
+              >Flexbox</span
+            >
+            <span
+              class="px-3 py-1 bg-[var(--color-brand-2)]/10 text-[var(--color-brand-2)] rounded-full"
+              >Grid</span
+            >
+            <span
+              class="px-3 py-1 bg-[var(--color-brand-3)]/10 text-[var(--color-brand-3)] rounded-full"
+              >Container Queries</span
+            >
+          </div>
+        </div>
+
+        <footer class="mt-12 pt-6 border-t border-[var(--color-border)]">
+          <div class="flex flex-wrap justify-between gap-4">
+            <div class="text-sm text-[var(--color-text-muted)]">
+              <p>© 2026 Rahmet Hussen</p>
+            </div>
+            <div class="flex gap-4 text-sm text-[var(--color-text-muted)]">
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >GitHub</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >Email</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >Twitter</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+          <div
+            class="mt-4 flex flex-wrap gap-4 text-xs text-[var(--color-text-muted)]"
+          >
+            <span>⚡ Tailwind v4</span>
+            <span>🌓 dark mode persisted</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

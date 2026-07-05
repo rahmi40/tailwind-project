@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer · Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="darkModeToggle" class="hidden" />
+    <div class="theme-wrapper">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <header
+          class="flex items-center justify-between flex-wrap gap-4 pb-6 border-b border-[var(--color-border)]"
+        >
+          <div class="flex items-center gap-2">
+            <span
+              class="text-2xl font-bold tracking-tight"
+              style="color: var(--color-brand-1)"
+              >Explorer</span
+            >
+            <span
+              class="text-sm font-mono bg-[var(--color-brand-1)]/10 px-2 py-0.5 rounded-full text-[var(--color-brand-1)]"
+              >v4</span
+            >
+          </div>
+          <div class="flex items-center gap-6">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+              <a
+                href="index.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >About me</a
+              >
+              <a
+                href="projects.html"
+                class="hover:text-[var(--color-brand-1)] transition font-bold text-[var(--color-brand-1)]"
+                >Projects</a
+              >
+              <a
+                href="contact.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Contact</a
+              >
+              <a
+                href="future.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Future</a
+              >
+            </nav>
+            <label
+              for="darkModeToggle"
+              class="p-2 rounded-full hover:bg-[var(--color-border)] transition text-[var(--color-text-muted)] cursor-pointer"
+              aria-label="Toggle dark mode"
+            >
+              <span class="dark-icon">🌙</span>
+              <span class="light-icon hidden">☀️</span>
+            </label>
+            <label
+              for="hamburgerToggle"
+              class="md:hidden flex flex-col items-center justify-center w-10 h-10 rounded hover:bg-[var(--color-border)] transition cursor-pointer"
+              aria-label="Menu"
+            >
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </label>
+          </div>
+        </header>
+        <input type="checkbox" id="hamburgerToggle" class="hidden" />
+        <div
+          id="mobileNav"
+          class="md:hidden mt-4 hidden-mobile flex-col gap-3 pb-4 border-b border-[var(--color-border)]"
+        >
+          <a
+            href="index.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >About me</a
+          >
+          <a
+            href="projects.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition font-bold text-[var(--color-brand-1)]"
+            >Projects</a
+          >
+          <a
+            href="contact.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Contact</a
+          >
+          <a
+            href="future.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Future</a
+          >
+        </div>
+        <section class="my-10 md:my-16">
+          <h1 class="hero-heading text-[var(--color-text)]">
+            My <span style="color: var(--color-brand-1)">Projects</span>
+          </h1>
+          <p class="hero-body mt-4">
+            A collection of my work showcasing responsive design, Tailwind v4,
+            and modern CSS techniques.
+          </p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          <div
+            class="card-surface rounded-2xl p-5 shadow-sm hover:shadow-md transition group"
+          >
+            <img
+              src="about image.jpg"
+              alt="My Website Project"
+              class="w-full h-48 object-cover rounded-lg mb-3 group-hover:scale-[1.02] transition duration-300"
+            />
+            <div class="flex items-center gap-3 mt-2">
+              <span class="text-3xl">🌐</span>
+              <h3 class="text-lg font-bold">My Website</h3>
+            </div>
+            <p class="text-sm text-[var(--color-text-muted)] mt-2">
+              Personal portfolio built with HTML, CSS, and Tailwind v4. Features
+              dark mode, responsive design, and container queries.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-1 text-xs">
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-1)]/10 text-[var(--color-brand-1)] rounded-full"
+                >Tailwind v4</span
+              >
+              <span class="px-2 py-1 bg-[var(--color-border)] rounded-full"
+                >Responsive</span
+              >
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-2)]/10 text-[var(--color-brand-2)] rounded-full"
+                >Dark mode</span
+              >
+            </div>
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-[var(--color-brand-1)] font-medium hover:underline"
+              >View details →</a
+            >
+          </div>
+
+          <div
+            class="card-surface rounded-2xl p-5 shadow-sm hover:shadow-md transition group"
+          >
+            <img
+              src="cat image.jpg"
+              alt="Image Gallery Project"
+              class="w-full h-48 object-cover rounded-lg mb-3 group-hover:scale-[1.02] transition duration-300"
+            />
+            <div class="flex items-center gap-3 mt-2">
+              <span class="text-3xl">🖼️</span>
+              <h3 class="text-lg font-bold">Image Gallery</h3>
+            </div>
+            <p class="text-sm text-[var(--color-text-muted)] mt-2">
+              A responsive image gallery using CSS Grid and container queries.
+              Automatically adapts to screen size.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-1 text-xs">
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-2)]/10 text-[var(--color-brand-2)] rounded-full"
+                >CSS Grid</span
+              >
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-3)]/10 text-[var(--color-brand-3)] rounded-full"
+                >Container query</span
+              >
+              <span class="px-2 py-1 bg-[var(--color-border)] rounded-full"
+                >Flexbox</span
+              >
+            </div>
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-[var(--color-brand-1)] font-medium hover:underline"
+              >View details →</a
+            >
+          </div>
+
+          <div
+            class="card-surface rounded-2xl p-5 shadow-sm hover:shadow-md transition group"
+          >
+            <img
+              src="writing image.jpg"
+              alt="Writing Project"
+              class="w-full h-48 object-cover rounded-lg mb-3 group-hover:scale-[1.02] transition duration-300"
+            />
+            <div class="flex items-center gap-3 mt-2">
+              <span class="text-3xl">📄</span>
+              <h3 class="text-lg font-bold">Writing</h3>
+            </div>
+            <p class="text-sm text-[var(--color-text-muted)] mt-2">
+              A blog-style page exploring future web technologies. Uses clamp()
+              for fluid typography.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-1 text-xs">
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-3)]/10 text-[var(--color-brand-3)] rounded-full"
+                >clamp()</span
+              >
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-1)]/10 text-[var(--color-brand-1)] rounded-full"
+                >Typography</span
+              >
+              <span class="px-2 py-1 bg-[var(--color-border)] rounded-full"
+                >CSS variables</span
+              >
+            </div>
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-[var(--color-brand-1)] font-medium hover:underline"
+              >View details →</a
+            >
+          </div>
+
+          <div
+            class="card-surface rounded-2xl p-5 shadow-sm hover:shadow-md transition group"
+          >
+            <img
+              src="field image.jpg"
+              alt="Field Explorer"
+              class="w-full h-48 object-cover rounded-lg mb-3 group-hover:scale-[1.02] transition duration-300"
+            />
+            <div class="flex items-center gap-3 mt-2">
+              <span class="text-3xl">🌾</span>
+              <h3 class="text-lg font-bold">Field Explorer</h3>
+            </div>
+            <p class="text-sm text-[var(--color-text-muted)] mt-2">
+              A nature-inspired landing page with beautiful imagery and smooth
+              scrolling sections.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-1 text-xs">
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-1)]/10 text-[var(--color-brand-1)] rounded-full"
+                >Landing page</span
+              >
+              <span class="px-2 py-1 bg-[var(--color-border)] rounded-full"
+                >Hero section</span
+              >
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-2)]/10 text-[var(--color-brand-2)] rounded-full"
+                >Responsive</span
+              >
+            </div>
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-[var(--color-brand-1)] font-medium hover:underline"
+              >View details →</a
+            >
+          </div>
+
+          <div
+            class="card-surface rounded-2xl p-5 shadow-sm hover:shadow-md transition group"
+          >
+            <img
+              src="student image.jpg"
+              alt="Student Hub"
+              class="w-full h-48 object-cover rounded-lg mb-3 group-hover:scale-[1.02] transition duration-300"
+            />
+            <div class="flex items-center gap-3 mt-2">
+              <span class="text-3xl">🎓</span>
+              <h3 class="text-lg font-bold">Student Hub</h3>
+            </div>
+            <p class="text-sm text-[var(--color-text-muted)] mt-2">
+              A dashboard design for students featuring clean UI, dark mode
+              toggle, and data cards.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-1 text-xs">
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-2)]/10 text-[var(--color-brand-2)] rounded-full"
+                >Dashboard</span
+              >
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-3)]/10 text-[var(--color-brand-3)] rounded-full"
+                >Dark mode</span
+              >
+              <span class="px-2 py-1 bg-[var(--color-border)] rounded-full"
+                >Cards</span
+              >
+            </div>
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-[var(--color-brand-1)] font-medium hover:underline"
+              >View details →</a
+            >
+          </div>
+
+          <div
+            class="card-surface rounded-2xl p-5 shadow-sm hover:shadow-md transition group"
+          >
+            <img
+              src="project image.jpg"
+              alt="Project Showcase"
+              class="w-full h-48 object-cover rounded-lg mb-3 group-hover:scale-[1.02] transition duration-300"
+            />
+            <div class="flex items-center gap-3 mt-2">
+              <span class="text-3xl">🚀</span>
+              <h3 class="text-lg font-bold">Project Showcase</h3>
+            </div>
+            <p class="text-sm text-[var(--color-text-muted)] mt-2">
+              A portfolio component with project cards, hover effects, and
+              responsive grid layout.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-1 text-xs">
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-1)]/10 text-[var(--color-brand-1)] rounded-full"
+                >Grid layout</span
+              >
+              <span class="px-2 py-1 bg-[var(--color-border)] rounded-full"
+                >Hover effects</span
+              >
+              <span
+                class="px-2 py-1 bg-[var(--color-brand-2)]/10 text-[var(--color-brand-2)] rounded-full"
+                >Tailwind</span
+              >
+            </div>
+            <a
+              href="#"
+              class="mt-4 inline-block text-sm text-[var(--color-brand-1)] font-medium hover:underline"
+              >View details →</a
+            >
+          </div>
+        </div>
+
+        <footer class="mt-12 pt-6 border-t border-[var(--color-border)]">
+          <div class="flex flex-wrap justify-between gap-4">
+            <div class="text-sm text-[var(--color-text-muted)]">
+              <p>© 2026 Rahmet Hussen</p>
+            </div>
+            <div class="flex gap-4 text-sm text-[var(--color-text-muted)]">
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >GitHub</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >Email</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >Twitter</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+          <div
+            class="mt-4 flex flex-wrap gap-4 text-xs text-[var(--color-text-muted)]"
+          >
+            <span>⚡ Tailwind v4</span>
+            <span>🌓 dark mode persisted</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

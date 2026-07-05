@@ -1,0 +1,121 @@
+:root {
+  --color-brand-1: #7c3aed;
+  --color-brand-2: #4f46e5;
+  --color-brand-3: #f59e0b;
+  --color-surface: #f8fafc;
+  --color-surface-card: #ffffff;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-border: #e2e8f0;
+}
+
+#darkModeToggle:checked ~ .theme-wrapper {
+  --color-surface: #0f172a;
+  --color-surface-card: #1e293b;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+}
+
+#darkModeToggle:checked ~ .theme-wrapper .dark-icon {
+  display: none;
+}
+
+#darkModeToggle:checked ~ .theme-wrapper .light-icon {
+  display: inline;
+}
+
+.theme-wrapper {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  min-height: 100vh;
+}
+
+.card-surface {
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.hero-heading {
+  font-size: clamp(2.2rem, 8vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.hero-body {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  max-width: 60ch;
+  color: var(--color-text-muted);
+}
+
+@container (min-width: 500px) {
+  .cq-card-wide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .cq-card-wide .cq-icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+  }
+  .cq-card-wide .cq-content {
+    flex: 1;
+  }
+}
+
+.cq-container {
+  container-type: inline-size;
+}
+
+.theme-transition {
+  transition:
+    background-color 0.25s,
+    color 0.25s,
+    border-color 0.25s;
+}
+
+.hamburger-line {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: currentColor;
+  border-radius: 999px;
+  transition: all 0.2s;
+}
+
+.hidden {
+  display: none;
+}
+
+#hamburgerToggle {
+  display: none !important;
+}
+
+#hamburgerToggle:checked ~ #mobileNav {
+  display: flex !important;
+}
+
+#mobileNav {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  #mobileNav {
+    display: none !important;
+  }
+}

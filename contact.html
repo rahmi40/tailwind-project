@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer · Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="darkModeToggle" class="hidden" />
+    <div class="theme-wrapper">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <header
+          class="flex items-center justify-between flex-wrap gap-4 pb-6 border-b border-[var(--color-border)]"
+        >
+          <div class="flex items-center gap-2">
+            <span
+              class="text-2xl font-bold tracking-tight"
+              style="color: var(--color-brand-1)"
+              >Explorer</span
+            >
+            <span
+              class="text-sm font-mono bg-[var(--color-brand-1)]/10 px-2 py-0.5 rounded-full text-[var(--color-brand-1)]"
+              >v4</span
+            >
+          </div>
+          <div class="flex items-center gap-6">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+              <a
+                href="index.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >About me</a
+              >
+              <a
+                href="projects.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Projects</a
+              >
+              <a
+                href="contact.html"
+                class="hover:text-[var(--color-brand-1)] transition font-bold text-[var(--color-brand-1)]"
+                >Contact</a
+              >
+              <a
+                href="future.html"
+                class="hover:text-[var(--color-brand-1)] transition"
+                >Future</a
+              >
+            </nav>
+            <label
+              for="darkModeToggle"
+              class="p-2 rounded-full hover:bg-[var(--color-border)] transition text-[var(--color-text-muted)] cursor-pointer"
+              aria-label="Toggle dark mode"
+            >
+              <span class="dark-icon">🌙</span>
+              <span class="light-icon hidden">☀️</span>
+            </label>
+            <label
+              for="hamburgerToggle"
+              class="md:hidden flex flex-col items-center justify-center w-10 h-10 rounded hover:bg-[var(--color-border)] transition cursor-pointer"
+              aria-label="Menu"
+            >
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </label>
+          </div>
+        </header>
+        <input type="checkbox" id="hamburgerToggle" class="hidden" />
+        <div
+          id="mobileNav"
+          class="md:hidden mt-4 hidden-mobile flex-col gap-3 pb-4 border-b border-[var(--color-border)]"
+        >
+          <a
+            href="index.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >About me</a
+          >
+          <a
+            href="projects.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Projects</a
+          >
+          <a
+            href="contact.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition font-bold text-[var(--color-brand-1)]"
+            >Contact</a
+          >
+          <a
+            href="future.html"
+            class="text-sm font-medium hover:text-[var(--color-brand-1)] transition"
+            >Future</a
+          >
+        </div>
+        <section class="my-10 md:my-16">
+          <h1 class="hero-heading text-[var(--color-text)]">
+            Get in <span style="color: var(--color-brand-1)">Touch</span>
+          </h1>
+          <p class="hero-body mt-4">
+            Have a project in mind? Let's talk about how we can build something
+            great together.
+          </p>
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          <div class="card-surface rounded-2xl p-6">
+            <h2 class="text-xl font-bold mb-4">📬 Contact Form</h2>
+            <form class="space-y-4">
+              <div>
+                <label
+                  class="block text-sm font-medium mb-1 text-[var(--color-text-muted)]"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  class="w-full px-4 py-2 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-1)]"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium mb-1 text-[var(--color-text-muted)]"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="your email"
+                  class="w-full px-4 py-2 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-1)]"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium mb-1 text-[var(--color-text-muted)]"
+                  >Message</label
+                >
+                <textarea
+                  rows="4"
+                  placeholder="write your nessage here..."
+                  class="w-full px-4 py-2 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-1)]"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="px-6 py-3 bg-[var(--color-brand-1)] text-white rounded-xl font-medium hover:opacity-90 transition"
+              >
+                Send message
+              </button>
+            </form>
+          </div>
+          <div
+            class="card-surface rounded-2xl p-6 flex flex-col justify-between"
+          >
+            <div>
+              <h2 class="text-xl font-bold mb-4">📱 Connect with me</h2>
+              <div class="space-y-4">
+                <a
+                  href="#"
+                  class="flex items-center gap-3 p-3 rounded-xl hover:bg-[var(--color-border)] transition"
+                >
+                  <span class="text-2xl">🐙</span>
+                  <span class="text-[var(--color-text)] font-medium"
+                    >GitHub</span
+                  >
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 p-3 rounded-xl hover:bg-[var(--color-border)] transition"
+                >
+                  <span class="text-2xl">✉️</span>
+                  <span class="text-[var(--color-text)] font-medium"
+                    >Email</span
+                  >
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 p-3 rounded-xl hover:bg-[var(--color-border)] transition"
+                >
+                  <span class="text-2xl">🐦</span>
+                  <span class="text-[var(--color-text)] font-medium"
+                    >Twitter</span
+                  >
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 p-3 rounded-xl hover:bg-[var(--color-border)] transition"
+                >
+                  <span class="text-2xl">💼</span>
+                  <span class="text-[var(--color-text)] font-medium"
+                    >LinkedIn</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="mt-6 p-4 bg-[var(--color-brand-1)]/5 rounded-xl border border-[var(--color-brand-1)]/20"
+            >
+              <p class="text-sm text-[var(--color-brand-1)]">
+                ⚡ Available for freelance work
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer class="mt-12 pt-6 border-t border-[var(--color-border)]">
+          <div class="flex flex-wrap justify-between gap-4">
+            <div class="text-sm text-[var(--color-text-muted)]">
+              <p>© 2026 Rahmet Hussen</p>
+            </div>
+            <div class="flex gap-4 text-sm text-[var(--color-text-muted)]">
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >GitHub</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >Email</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >Twitter</a
+              >
+              <a href="#" class="hover:text-[var(--color-brand-1)] transition"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+          <div
+            class="mt-4 flex flex-wrap gap-4 text-xs text-[var(--color-text-muted)]"
+          >
+            <span>⚡ Tailwind v4</span>
+            <span>🌓 dark mode persisted</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
